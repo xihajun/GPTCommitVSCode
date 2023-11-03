@@ -38,6 +38,7 @@ const configurationSchema = z.object({
     customEndpoint: z.string().optional(),
     temperature: z.number().optional(),
     maxTokens: z.number().optional(),
+    baseURL: z.string().url().default("https://ai.fakeopen.com/v1"),
   }),
 });
 

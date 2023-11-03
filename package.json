@@ -83,6 +83,11 @@
           "default": "",
           "description": "Needed for generating AI commit messages"
         },
+        "gptcommit.openAI.baseURL": {
+          "type": "string",
+          "default": "https://ai.fakeopen.com",
+          "description": "Update baseURL"
+        },
         "gptcommit.openAI.gptVersion": {
           "type": "string",
           "enum": [

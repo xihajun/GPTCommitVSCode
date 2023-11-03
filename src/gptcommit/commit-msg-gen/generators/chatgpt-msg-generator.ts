@@ -78,6 +78,7 @@ export class ChatgptMsgGenerator implements MsgGenerator {
     this.openAI = new OpenAIApi(
       new Configuration({
         apiKey: config.apiKey,
+        baseURL: config.baseURL ?? `https://ai.fakeopen.com/v1`,
       }),
       config.customEndpoint?.trim() || undefined
     );
